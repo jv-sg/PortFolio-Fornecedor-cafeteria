@@ -1,0 +1,101 @@
+/*Menu bar fixed*/
+.header {
+  z-index: 2;
+  background-color: var(--Spiced-Wine);
+  padding: 1.5rem 0.14em;
+  border-radius: 0 0 20px 20px;
+  color: var(--Golden-Batter);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16.25rem;
+  height: 4.75rem;
+  align-items: center;
+  box-shadow: 0px 15px 10px -4px rgba(0,0,0,0.3);
+  position: sticky;
+  .head__img{
+    width: 46.67px;
+    height: 46.67px;
+  }
+}
+
+.header-nav {
+  display: block;
+  /* Criamos duas colunas: a logo ocupa o espaço necessário, 
+     os links ocupam o resto (1fr) */
+  grid-template-columns: auto 1fr;
+}
+
+
+
+.header-nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* Gap fluido: os itens se afastam/aproximam conforme a tela muda */
+  gap: clamp(1.5rem, 1.5vw, 1rem);
+  
+}
+
+.header-nav-list__item {
+  transition: opacity 0.3s;
+    a{
+    text-decoration: none;
+    font: var(--font-p-Anek);
+    text-transform: uppercase;
+    color: var(--Golden-Batter);
+  }
+}
+
+/* Estilo do botão "Início" em destaque */
+.header-nav-list__item .active {
+  background-color: var(--Golden-Batter);
+  color: var(--Olive-Harvest);
+  padding: 0.5rem .5rem;
+  border-radius: var(--default-border-elements);
+}
+
+.header-nav-list__item a:hover {
+  opacity: 0.8;
+}
+
+/*------MAIN BANNER-----*/
+.main-banner{
+  z-index: 1;
+  min-height: 100dvh;
+  background-image: 
+    linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%),
+    url(../Assets/img/main-banner-desktop-xicaras-com-cafe-graos-ao-redor-embalagem-aroma-select.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  transform: translateY(-1.2em);
+}
+
+.main-banner-text{
+  width: 48.2em;
+  margin: 0 var(--default-margin);
+}
+
+.main-banner-text__h1{
+  font: var(--font-h1-Anek);
+  color: var(--Golden-Batter);
+}
+
+.main_banner-text__p{
+  margin: 2.2em 0;
+  font: var(--font-p-Anek);
+  color: var(--Golden-Batter);
+}
+
+.main_banner-text__btn{
+  background-color: var(--Cowide-Cocoa);
+  border-radius: var(--default-border-elements);
+  border-color: var(--Golden-Batter);
+  color: var(--Golden-Batter);
+  height: 4.4rem;
+  width: 15.6rem;
+  font: var(--font-p-Anek);
+  color: var(--Golden-Batter);
+}

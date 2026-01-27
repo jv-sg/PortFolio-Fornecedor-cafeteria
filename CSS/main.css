@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+html{
+    scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +23,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 65.2%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -55,18 +59,20 @@ table {
     --Olive-Harvest: #9D9167;
     --Golden-Batter: #E8D1A7;
     --Whitter: #E6E4E0;
-    --font-h1-Anek: normal 100 65.0em "Anek Gurmukhi", sans-serif;
-    --font-h2-Anek-bold: medium 600 48.0em "Anek Gurmukhi", sans-serif;
-    --font-h2-Joan: normal 400 48.0em "Joan", serif;
-    --font-h3-Joan: normal 400 32.0em "Joan", serif;
-    --font-h3-Anek-bold: medium 600 48.0em "Anek Gurmukhi", sans-serif;
-    --font-h3-Anek: normal 400 32.0em "Anek Gurmukhi", sans-serif;
-    --font-h4-Anek: normal 400 18.0em "Anek Gurmukhi", sans-serif;
-    --font-h4-Joan: normal 400 18.0em "Joan", serif;
-    --font-p-Anek: normal 400 16.0em "Anek Gurmukhi", sans-serif;
-    --font-p-Joan: normal 400 16.0em "Joan", serif;
-    --font-span-Anek: normal 400 32.0em "Anek Gurmukhi", sans-serif;
-    --font-span-Joan: normal 400 32.0em "Joan", serif;
-    --font-input-Anek: normal 400 24.0em "Anek Gurmukhi", sans-serif;
-    --font-input-Joan: normal 400 24.0em "Joan", serif;
+    --font-h1-Anek: normal 400 5.8em "Anek Gurmukhi", sans-serif;
+    --font-h2-Anek-bold: medium 600 4.80em "Anek Gurmukhi", sans-serif;
+    --font-h2-Joan: normal 400 4.80em "Joan", serif;
+    --font-h3-Joan: normal 400 3.20em "Joan", serif;
+    --font-h3-Anek-bold: medium 600 4.80em "Anek Gurmukhi", sans-serif;
+    --font-h3-Anek: normal 400 3.20em "Anek Gurmukhi", sans-serif;
+    --font-h4-Anek: normal 400 1.18em "Anek Gurmukhi", sans-serif;
+    --font-h4-Joan: normal 400 1.18em "Joan", serif;
+    --font-p-Anek: normal 400 1.16em "Anek Gurmukhi", sans-serif;
+    --font-p-Joan: normal 400 1.60em "Joan", serif;
+    --font-span-Anek: normal 400 3.20em "Anek Gurmukhi", sans-serif;
+    --font-span-Joan: normal 400 3.20em "Joan", serif;
+    --font-input-Anek: normal 400 2.40em "Anek Gurmukhi", sans-serif;
+    --font-input-Joan: normal 400 2.40em "Joan", serif;
+    --default-border-elements: 0.4em;
+    --default-margin: 17.6em;
 }
