@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'>
     <link rel="stylesheet" type='text/css' media='screen' href="CSS/components.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main-banner.css">
     <script src='main.js'></script>
 </head>
 
@@ -44,11 +46,11 @@
             </article>
         </section>
 
-        <section class="most-orders">
+        <section class="section most-orders">
             <hgroup class="most-orders-title">
-                <h2 class="most-orders-title__h2">Mais pedidos</h2>
-                <h3 class="most-orders-title__h3">Os favoritos da nossa comunidade. Conheça as seleções que mais fazem
-                    sucesso entre os apaixonados por café.</h3>
+                <h2 class="most-orders__h2">Mais pedidos</h2>
+                <p class="most-orders__h3">Os favoritos da nossa comunidade. Conheça as seleções que mais fazem
+                    sucesso entre os apaixonados por café.</p>
             </hgroup>
 
             <section class="most-orders-cards">
@@ -64,9 +66,11 @@
                             vaporizado e uma camada de espuma aveludada, perfeito para qualquer momento.</p>
                         <p class="most-orders-cards-article-content__p-ftxt">Rende: 300ml por 30g</p>
                         <div class="most-orders-cards-article-content-interaction">
-                            <button class="most-orders-cards-article-content-interaction__minus"></button>
-                            <input class="most-orders-cards-article-content-interaction__input">
-                            <button class="most-orders-cards-article-content-interaction__plus"></button>
+                            <button class="most-orders-cards-article-content__btn"><img
+                                    src="Assets/icons/Minus-outline.png" alt=""></button>
+                            <input class="most-orders-cards-article-content__input" value="500 kg" disabled>
+                            <button class="most-orders-cards-article-content__btn"><img src="Assets/icons/Plus.png"
+                                    alt=""></button>
                         </div>
                     </hgroup>
                 </article>
@@ -84,9 +88,11 @@
                             do café.</p>
                         <p class="most-orders-cards-article-content__p-ftxt">Rende: 300ml por 30g</p>
                         <div class="most-orders-cards-article-content-interaction">
-                            <button class="most-orders-cards-article-content-interaction__minus"></button>
-                            <input class="most-orders-cards-article-content-interaction__input">
-                            <button class="most-orders-cards-article-content-interaction__plus"></button>
+                            <button class="most-orders-cards-article-content__btn"><img
+                                    src="Assets/icons/Minus-outline.png" alt=""></button>
+                            <input class="most-orders-cards-article-content__input" value="500 kg" disabled>
+                            <button class="most-orders-cards-article-content__btn"><img src="Assets/icons/Plus.png"
+                                    alt=""></button>
                         </div>
                     </hgroup>
                 </article>
@@ -104,9 +110,11 @@
                             toque aveludado.</p>
                         <p class="most-orders-cards-article-content__p-ftxt">Rende: 300ml por 30g</p>
                         <div class="most-orders-cards-article-content-interaction">
-                            <button class="most-orders-cards-article-content-interaction__minus"></button>
-                            <input class="most-orders-cards-article-content-interaction__input">
-                            <button class="most-orders-cards-article-content-interaction__plus"></button>
+                            <button class="most-orders-cards-article-content__btn"><img
+                                    src="Assets/icons/Minus-outline.png" alt=""></button>
+                            <input class="most-orders-cards-article-content__input" value="500 kg" disabled>
+                            <button class="most-orders-cards-article-content__btn"><img src="Assets/icons/Plus.png"
+                                    alt=""></button>
                         </div>
                     </hgroup>
                 </article>
@@ -114,7 +122,7 @@
 
         </section>
 
-        <section class="other-orders">
+        <section class="section other-orders">
             <hgroup class="other-orders-title">
                 <h2 class="other-orders-title__h2">Um universo de sabores para você</h2>
                 <h3 class="other-orders-title__h3">Explore nossa linha completa, do clássico tradicional às notas
@@ -254,7 +262,7 @@
 
         </section>
 
-        <section class="us-content">
+        <section class="section us-content">
             <div class="us-content__glass">
                 <hgroup class="us-content-title">
                     <h2 class="us-content-title__h2">Por que escolher nós?</h2>
@@ -306,7 +314,7 @@
             <button class="us-content__btn">Calcular minha demanda</button>
         </section>
 
-        <section class="banner-secont-level">
+        <section class="section banner-secont-level">
             <article>
                 <h2 class="banner-secont-level__h2">Do grão especial à sua xícara.
                     Qualidade superior com preços que cabem no seu negócio.</h2>
@@ -314,7 +322,7 @@
             <button class="banner-secont-level__btn">Fazer uma encomenda</button>
         </section>
 
-        <section class="score-content">
+        <section class="section score-content">
             <hgroup class="score-content-title">
                 <h2 class="score-content-title__h2">Cafés especiais e experiências únicas</h2>
                 <h3 class="score-content-title__h3">Avaliações de nossos clientes</h3>
@@ -384,7 +392,7 @@
             <button></button>
         </section>
 
-        <section class="news-letter">
+        <section class="section news-letter">
             <article class="news-letter-content">
                 <hgroup class="news-letter-content-text">
                     <h2 class="news-letter-content-text__h2">Assine nossa newsletter</h2>
@@ -399,7 +407,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <section class="footer-section">
             <img src="Assets/img/logo-aroma-select-branco.png" alt="Logo Aroma Select branco">
             <nav class="footer-nav">
@@ -407,32 +415,32 @@
                     <li class="footer-nav-ul__title">
                         <h4>Pivacidade</h4>
                     </li>
-                    <li class="footer-nav-ul__navagation"><a>Lei geral de proteção de dados</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Politicas internas</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Seus dados</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Lei geral de proteção de dados</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Politicas internas</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Seus dados</a></li>
                 </ul>
                 <ul class="footer-nav-ul">
                     <li class="footer-nav-ul__title">
                         <h4>Serviços</h4>
                     </li>
-                    <li class="footer-nav-ul__navagation"><a>Entenda os prazos</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Seja um parceiro</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Coletas</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Tratamento de grãos</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Entenda os prazos</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Seja um parceiro</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Coletas</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Tratamento de grãos</a></li>
                 </ul>
                 <ul class="footer-nav-ul">
                     <li class="footer-nav-ul__title">
                         <h4>Sobre nós</h4>
                     </li>
-                    <li class="footer-nav-ul__navagation"><a>Nossa história</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Investidores</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Histórias na mídia</a></li>
-                    <li class="footer-nav-ul__navagation"><a>Trabalhe conosco</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Nossa história</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Investidores</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Histórias na mídia</a></li>
+                    <li class="footer-nav-ul__navagation"><a href="#">Trabalhe conosco</a></li>
                 </ul>
             </nav>
         </section>
         <p class="footer_p">Copy rights 2026 todos os direitos de marca reservados 0000-000 São Paulo - SP</p>
-    </footer>
+    </footer> -->
 
 </body>
 

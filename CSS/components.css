@@ -1,101 +1,124 @@
-/*Menu bar fixed*/
-.header {
-  z-index: 2;
-  background-color: var(--Spiced-Wine);
-  padding: 1.5rem 0.14em;
-  border-radius: 0 0 20px 20px;
-  color: var(--Golden-Batter);
+/*modulo 1*/
+.most-orders{
+  width: 83.8%;
+  margin: 0 auto;
+  padding: var(--default-margin);
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Assets/img/bg-parttern.png");
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  padding: 2em 8.8em;
+}
+
+.most-orders-title{
+  text-align: right;
+  margin: 12.4em 0 4.8em auto;
+  width: var(--default-width-paragraf);
+}
+
+.most-orders__h2{
+  display: block;
+  font: var(--font-h2-Anek-bold);
+  color: var(--Black-Coffee);
+}
+
+.most-orders__h3{
+  font: var(--font-input-Anek);
+  color: var(--Black-Coffee);
+}
+
+.most-orders-cards{
+  padding: var(--default-margin);
   display: flex;
   justify-content: space-between;
-  padding: 0 16.25rem;
-  height: 4.75rem;
-  align-items: center;
-  box-shadow: 0px 15px 10px -4px rgba(0,0,0,0.3);
-  position: sticky;
-  .head__img{
-    width: 46.67px;
-    height: 46.67px;
-  }
+  gap: 8.8em;
+  margin-bottom: 14.4em;
 }
 
-.header-nav {
-  display: block;
-  /* Criamos duas colunas: a logo ocupa o espaço necessário, 
-     os links ocupam o resto (1fr) */
-  grid-template-columns: auto 1fr;
+.most-orders-cards-article-content{
+  background-color: var(--Whitter);
+  text-align: center;
+  height: 43.7em;
+  width: 30.4em;
+  padding: 0 2em 2.5em 2em;
+  border-radius: 2.2em;
+  align-content: end;
 }
 
-
-
-.header-nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* Gap fluido: os itens se afastam/aproximam conforme a tela muda */
-  gap: clamp(1.5rem, 1.5vw, 1rem);
-  
+.most-orders-cards-article-content__h3{
+  font: var(--font-h2-Anek-bold);
+  color: var(--Cowide-Cocoa);
 }
 
-.header-nav-list__item {
-  transition: opacity 0.3s;
-    a{
-    text-decoration: none;
-    font: var(--font-p-Anek);
-    text-transform: uppercase;
-    color: var(--Golden-Batter);
-  }
-}
-
-/* Estilo do botão "Início" em destaque */
-.header-nav-list__item .active {
-  background-color: var(--Golden-Batter);
-  color: var(--Olive-Harvest);
-  padding: 0.5rem .5rem;
-  border-radius: var(--default-border-elements);
-}
-
-.header-nav-list__item a:hover {
-  opacity: 0.8;
-}
-
-/*------MAIN BANNER-----*/
-.main-banner{
-  z-index: 1;
-  min-height: 100dvh;
-  background-image: 
-    linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%),
-    url(../Assets/img/main-banner-desktop-xicaras-com-cafe-graos-ao-redor-embalagem-aroma-select.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  transform: translateY(-1.2em);
-}
-
-.main-banner-text{
-  width: 48.2em;
-  margin: 0 var(--default-margin);
-}
-
-.main-banner-text__h1{
-  font: var(--font-h1-Anek);
-  color: var(--Golden-Batter);
-}
-
-.main_banner-text__p{
-  margin: 2.2em 0;
+.most-orders-cards-article-content__p{
   font: var(--font-p-Anek);
-  color: var(--Golden-Batter);
+  margin: 1.2em 0;
+  color: var(--Cowide-Cocoa);
 }
 
-.main_banner-text__btn{
-  background-color: var(--Cowide-Cocoa);
-  border-radius: var(--default-border-elements);
-  border-color: var(--Golden-Batter);
-  color: var(--Golden-Batter);
-  height: 4.4rem;
-  width: 15.6rem;
-  font: var(--font-p-Anek);
-  color: var(--Golden-Batter);
+.most-orders-cards-article-content__p-ftxt{
+  font: var(--font-p-Anek-bold);
+  color: var(--Toasted-Caramel);
+  margin: 1.6em 0;
 }
+
+.most-orders-cards-article__div-bg-img{
+  transform: translateY(-10em);
+}
+
+.most-orders-cards-article__div-bg{
+  background-color: var(--Olive-Harvest);
+  width: 16em;
+  height: 16em;
+  border-radius: calc(var(--default-border-elements) * 5);
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(9em);
+}
+
+.most-orders-cards-article-content__p{
+  font: var(--font-p-Anek);
+  color: var(--Black-Coffee);
+}
+
+.most-orders-cards-article-content-interaction{
+  width: 100%;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+
+.most-orders-cards-article-content__input{
+  width: 6em;
+  height: 2em;
+  border-radius: var(--default-border-elements);
+  padding: 0;
+  color: var(--Spiced-Wine);
+  font: var(--font-input-Anek);
+  text-align: center;
+}
+
+.most-orders-cards-article-content__btn{
+  padding: 0;
+  border: none;
+  background-color: var(--Whitter);
+  cursor: pointer;
+}
+
+.most-orders-cards-article-content__btn img{
+  width: 4em;
+  height: 4em;
+}
+
+/* .footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: var(--Spiced-Wine);
+    height: auto;
+    min-height: 28rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem; 
+} */

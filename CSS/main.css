@@ -18,23 +18,25 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, main, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 65.2%;
 	font: inherit;
-	vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+
+img{
+    border: none;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -59,20 +61,32 @@ table {
     --Olive-Harvest: #9D9167;
     --Golden-Batter: #E8D1A7;
     --Whitter: #E6E4E0;
-    --font-h1-Anek: normal 400 5.8em "Anek Gurmukhi", sans-serif;
-    --font-h2-Anek-bold: medium 600 4.80em "Anek Gurmukhi", sans-serif;
-    --font-h2-Joan: normal 400 4.80em "Joan", serif;
-    --font-h3-Joan: normal 400 3.20em "Joan", serif;
-    --font-h3-Anek-bold: medium 600 4.80em "Anek Gurmukhi", sans-serif;
-    --font-h3-Anek: normal 400 3.20em "Anek Gurmukhi", sans-serif;
-    --font-h4-Anek: normal 400 1.18em "Anek Gurmukhi", sans-serif;
-    --font-h4-Joan: normal 400 1.18em "Joan", serif;
-    --font-p-Anek: normal 400 1.16em "Anek Gurmukhi", sans-serif;
-    --font-p-Joan: normal 400 1.60em "Joan", serif;
-    --font-span-Anek: normal 400 3.20em "Anek Gurmukhi", sans-serif;
-    --font-span-Joan: normal 400 3.20em "Joan", serif;
-    --font-input-Anek: normal 400 2.40em "Anek Gurmukhi", sans-serif;
-    --font-input-Joan: normal 400 2.40em "Joan", serif;
+    --font-h1-Anek: 400 5.8em "Anek Gurmukhi", sans-serif;
+    --font-h2-Anek-bold: 600 4.80em "Anek Gurmukhi", sans-serif;
+    --font-h2-Joan: 400 4.80em "Joan", serif;
+    --font-h3-Joan: 400 3.20em "Joan", serif;
+    --font-h3-Anek-bold: 600 4.80em "Anek Gurmukhi", sans-serif;
+    --font-h3-Anek: 400 3.20em "Anek Gurmukhi", sans-serif;
+    --font-h4-Anek: 400 1.8em "Anek Gurmukhi", sans-serif;
+    --font-h4-Joan: 400 1.8em "Joan", serif;
+    --font-p-Anek: 400 1.6em "Anek Gurmukhi", sans-serif;
+    --font-p-Anek-bold: 600 1.6em "Anek Gurmukhi", sans-serif;
+    --font-p-Joan: 400 1.60em "Joan", serif;
+    --font-span-Anek: 400 3.20em "Anek Gurmukhi", sans-serif;
+    --font-span-Joan: 400 3.20em "Joan", serif;
+    --font-input-Anek: 400 2.40em "Anek Gurmukhi", sans-serif;
+    --font-input-Joan: 400 2.40em "Joan", serif;
     --default-border-elements: 0.4em;
-    --default-margin: 17.6em;
+    --default-margin: 0 17.6em;
+    --default-width-paragraf: 75.2em
+}
+
+body {
+  font-size: 65.2%;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "banner banner banner"
+    "main main main"
+    "footer footer footer";
 }
